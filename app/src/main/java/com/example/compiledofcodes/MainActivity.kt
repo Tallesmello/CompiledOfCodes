@@ -6,11 +6,13 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.compiledofcodes.view.carrossel.ViewPager2CarrosselActivity
 import com.example.compiledofcodes.view.estrutura.ViewPager2Activity
+import com.example.compiledofcodes.webView.WebViewActivity
 
 class MainActivity : AppCompatActivity() {
 
      private val btnViewPager2Estrutura by lazy { findViewById<Button>(R.id.btnViewPager2Estrutura) }
      private val btnViewPager2Carrossel by lazy { findViewById<Button>(R.id.btnViewPager2Carrossel) }
+     private val btnWebView by lazy { findViewById<Button>(R.id.btnWebView) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
         btnViewPager2Carrossel.setOnClickListener {
             switchScreen(ViewPager2CarrosselActivity())
+        }
+
+        btnWebView.setOnClickListener {
+            switchScreen(WebViewActivity())
         }
 
     }
