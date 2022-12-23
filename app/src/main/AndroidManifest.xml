@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CompiledOfCodes">
         <activity
+            android:name=".webView.WebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.carrossel.ViewPager2CarrosselActivity"
             android:exported="false" />
         <activity
             android:name=".view.estrutura.ViewPager2Activity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
